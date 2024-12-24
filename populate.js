@@ -1,17 +1,17 @@
-import { readFile } from 'fs';
+import { readFile } from 'fs/promises';
 
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config();
 
-import jobSchema from '/home/ryan/Desktop/jobify/models/jobSchema.js';
-import userSchema from '/home/ryan/Desktop/jobify/models/userSchema.js';
+import jobSchema from './models/jobSchema.js';
+import userSchema from './models/userSchema.js';
 
 
 try {
     await mongoose.connect(process.env.MONGOURL)
-    const user = await userSchema.findOne({email: "ryan_maule@yahoo.com"})
-    const jsonJobs = JSON.parse( readFile(new URL("/home/ryan/Desktop/jobify/utils/mockData.json",
+    const user = await userSchema.findOne({email: "jane_doe@gmail.com"})
+    const jsonJobs = JSON.parse(await readFile(new URL("./utils/mockData.json",
     import.meta.url)));
     const jobs = jsonJobs.map(job => {
         return{...job, createdBy: user._id}
