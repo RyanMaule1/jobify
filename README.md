@@ -36,4 +36,4 @@ Job Tracker is a full-stack web application built using the MERN stack (MongoDB,
 
 • Authentication: JWT for secure access and session management
 
-• Deployment: Render.com
+• Deployment: Render
