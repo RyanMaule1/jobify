@@ -4,7 +4,7 @@
 
 #### Preloaded Account
 
-Login with the following account to view account preloaded with jobs to user pagination and search functionality
+Login with the following account to view account preloaded with jobs to showcase pagination and search functionality
 
 email: jane_doe@gmail.com
 password: 12345678MPS <- MPS is upercase
