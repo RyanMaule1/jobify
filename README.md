@@ -1,6 +1,6 @@
 #### Complete App
 
-[Jobify](https://jobify-r66j.onrender.com)
+[Jobify](https://jobify-r66j.onrender.com) - Sometimes takes a minute to load
 
 #### Preloaded Account
 
